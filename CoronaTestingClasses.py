@@ -3,7 +3,7 @@ import math
 
 class CoronaSuspect(object):
     def __init__(self, infectionChance):
-        ###Infection chance is expressed as a float value between 0-100"""
+        ###Infection chance is expressed as a float value between 0-1"""
         self.infectionChance = infectionChance
         if random.random() <= self.infectionChance:
             self.infected = True
